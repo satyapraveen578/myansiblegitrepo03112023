@@ -7,4 +7,7 @@
     apt:
       name: apache2
       state: present
-    
+  - name: copy myindexfile into ansible node side
+    copy:
+      src: myindexfile
+      dest: /var/www/html/index.html
