@@ -1,0 +1,5 @@
+---
+- hosts: 172.31.26.183
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
